@@ -520,14 +520,14 @@
     <script type="module" src="js/cookieconsent-config.js"></script>
     <script type="module">
       // Include Lightbox
-      import PhotoSwipeLightbox from "js/photoswipe/photoswipe-lightbox.esm.js";
+      import PhotoSwipeLightbox from "./js/photoswipe/photoswipe-lightbox.esm.js";
 
       const lightbox = new PhotoSwipeLightbox({
         gallery: "#gallery--getting-started",
         children: "a",
 
         // setup PhotoSwipe Core dynamic import
-        pswpModule: () => import("js/photoswipe/photoswipe.esm.js"),
+        pswpModule: () => import("./js/photoswipe/photoswipe.esm.js"),
       });
       lightbox.init();
     </script>
